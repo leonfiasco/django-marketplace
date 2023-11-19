@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-317#uw*4tx3fc*5ttr6kx2@*)y!o4t+*+b&y%cmeo@uklm*op6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "conversation",
     "core",
     "dashboard",
     "item"
